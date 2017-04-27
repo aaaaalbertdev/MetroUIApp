@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<title>BT Portal</title>
+		<link href="css/metro.css" rel="stylesheet" />
+		<link href="css/metro-schemes.css" rel="stylesheet" />
+		<link href="css/metro-icons.css" rel="stylesheet" />
+		<link href="css/metro-responsive.css" rel="stylesheet" />
+		<script src="/js/jquery-3.2.0.min.js"></script>
+		<script src="/js/metro.js"></script>
+	</head>
+
+	<body class="metro bg-grayLighter">
+		<div class="app-bar navy fixed-top" data-role="appbar">
+			<div class="app-bar-element branding text-default" href="...">BizTech Dashboard</div>
+			<span class="app-bar-divider"></span>
+			<ul class="app-bar-menu">
+				<li data-flexorderorigin="0" data-flexorder="1"><a>Dashboard</a></li>
+				<li data-flexorderorigin="1" data-flexorder="2"><a>Applications</a></li>
+			</ul>
+			<div class="app-bar-element place-right text-default">Hi! Martires, Albert Rick</div>
+		</div>
+		<div class="page-content clear-float">
+			<div class="flex-grid no-responsive-future" style="height:100%;">
+				<div class="row" style="height:100%;">
+					<div class="cell auto-size padding60" id="cell-content">
+						<h1 class="header">
+							Application Catalog
+							<span class="mif-apps place-right"></span>
+						</h1>
+						<hr class="thin bg-gray">
+						<div class="row cell">
+							<div class="cell colspan12">
+								<div class="tabcontrol bg-grayLighter" data-role="tabcontrol" data-open-target="#favorites" data-save-state="true">
+									<ul class="tabs row flex-just-center">
+										<li class="active"><a href="#favorites"><span class="mif-star-empty"></span></a></li>
+										<li><a href="#available"><span class="mif-bookmarks"></span></a></li>
+										<li><a href="#all"><span class="mif-apps"></span></a></li>
+									</ul>
+									<div class="frames">
+										<div class="frame bg-grayLighter" id="favorites"> 
+											<div class="row flex-just-center">
+												<div class="tile-wide bg-white">
+													<span>Operations Scorecard</span>
+												</div>
+												<div class="tile-wide bg-white">
+													<span>Project Plan - Generic</span>
+												</div>
+												<div class="tile-wide bg-white">
+													<span>Structured Settlement</span>
+												</div>
+												<div class="tile-wide bg-white">
+													<span>Benefits Estimates</span>
+												</div>
+											</div>
+										</div>
+										<!--<div class="frame bg-grayLighter" id="available"> 
+											<div class="row flex-just-center">
+												<div class="tile-wide bg-white">
+													<span>Operations Scorecard</span>
+												</div>
+												<div class="tile-wide bg-white">
+													<span>Project Plan - Generic</span>
+												</div>
+												<div class="tile-wide bg-white">
+													<span>Structured Settlement</span>
+												</div>
+												<div class="tile-wide bg-white">
+													<span>Benefits Estimates</span>
+												</div>
+												<div class="tile-wide bg-white">
+													<span>SPRNT Tax</span>
+												</div>
+											</div>
+										</div>
+										<div class="frame bg-grayLighter" id="all">
+											<div class="row flex-just-center">
+												<div class="tile-wide bg-white">
+													<span>Operations Scorecard</span>
+												</div>
+												<div class="tile-wide bg-white">
+													<span>Project Plan - Generic</span>
+												</div>
+												<div class="tile-wide bg-white">
+													<span>Structured Settlement</span>
+												</div>
+												<div class="tile-wide bg-white">
+													<span>Benefits Estimates</span>
+												</div>
+												<div class="tile-wide bg-white">
+													<span>SPRNT Tax</span>
+												</div>
+											</div>
+										</div>
+									</div>-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$('.tabcontrol').tabcontrol();
+		</script>
+	</body>
+</html>
